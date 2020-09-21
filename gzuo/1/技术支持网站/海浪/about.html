@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>海浪电竞</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    color: #262626;
+    line-height: 1;
+    font-size: 14px;
+  }
+  img {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .f-left {
+    float: left;
+  }
+  .f-right {
+    float: right;
+  }
+  .clearfix::after {
+   content: '';
+   display: table;
+   clear: both;
+  }
+  .text-center {
+    text-align: center;
+  }
+  /* title */
+  h2 {
+    font-size: 24px;
+    margin: 60px 0 20px 0;
+    font-weight: normal;
+  }
+  @media screen and (min-width:1400px){
+    .container-content { width: 1200px; margin: 0 auto; margin-top: 260px; }
+  }
+
+  @media screen and (min-width: 960px) and (max-width: 1399px) {
+    .container-content { width: 1200px; margin: 0 auto; }
+  }
+
+  .home-title {
+    margin-bottom: 45px;
+  }
+  .color-999 {
+    color: #999999;
+  }
+  .color-333 {
+    color: #333;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  header {
+    height: 81px;
+  }
+  nav {
+    margin-top: 30px;
+  }
+  .nav-item {
+    margin-left: 80px;
+    color: #262626;
+
+  }
+  .nav-item.active {
+    color: #2d9fe0;
+  }
+  .banner {
+    height: 450px;
+    background-size: auto 100%;
+    background-position: center center;
+  }
+  .home-banner {
+    /* background-image: url(https://51nbimg.u51.com/4fe638c5255848f4b773f00899720a6c.jpg); */
+    height: 682px;
+  }
+  .list-item {
+    text-align: justify;
+    font-size: 14px;
+    padding: 14px 0 14px 0;
+    list-style: none;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  /* .content {
+    padding-bottom: 100px;
+  } */
+  .alipay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .alipay-mask {
+    background: #fff;
+    opacity: 0.65;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .alipay img {
+    position: absolute;
+    width: 330px;
+    top: 50%;
+    left: 50%;
+    margin-left: -165px;
+    margin-top: -301px;
+  }
+  .item-img {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+    height: 90px;
+    line-height: 40px;
+    background: #272724;
+    color: #fff;
+  }
+  .f-box{
+    margin:0 auto;
+    width: 420px;
+  }
+  .add-box{
+    margin:0 auto;
+    width: 563px;
+    margin-bottom: 50px;
+  }
+  .add-box a{
+    text-decoration:underline;
+  }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container clearfix">
+      <img src="./image/海浪.png" class="logo f-left" alt="">
+      <nav class="f-right">
+        <a class="active nav-item f-right" href="./about.html">关于我们</a>
+        <a class="nav-item f-right" href="./index.html">首页</a>
+      </nav>
+    </div>
+  </header>
+  <section class="banner about-banner">
+    <div>
+      <img src="./image/1-海浪.jpg" alt="" style="width: 100%;">
+    </div>
+  </section>
+  <section class="container-content" >
+    <h2 class="text-center">产品简介</h2>
+    <p class="color-333 text-center">海浪电竞是一个娱乐与速度的天堂，玩法种类丰富，是您休闲娱乐的最近伙伴</p>
+    <h2 class="text-center">产品特色</h2>
+    <div class="f-box">
+      <p class="color-333"><span class="bold">奖牌名利：</span>花费您的休闲时间，创造属于你自己的玩法赛程</p>
+      <br>
+      <p class="color-333"><span class="bold">信息安全：</span>身份实名后即可参与玩法多样，数据安有保障，信息可靠</p>
+      <br>
+      <p class="color-333"><span class="bold">响应快速：</span>客服温柔、反应快速，会第一时间回您的问题并进行解决</p>
+      <br>
+      <p class="color-333"><span class="bold">方便快捷：</span>优选最近玩法，实时推送优质的玩法信息</p>
+      <br>
+      <p class="color-333"><span class="bold">推广赚钱：</span>邀请您身边的朋友，一起参与多样玩法，即可完成赚钱</p>
+    </div>
+    <h2 class="text-center">联系方式</h2>
+    <div class="add-box">
+      <p class="color-333">联系地址：长春市南关区东至丙十二路西至幸福街南至丙九路陶然庭苑1[幢]3单元2405号房</p>
+      <!-- <p class="color-333">联系地址：<a target="_blank" href="https://j.map.baidu.com/60/P_i">北京市昌平区东小口镇中东路5号院3号</a></p> -->
+      <br>
+      <p class="color-333">欢迎致电：13394423999</p>
+    </div>
+  </section>
+  <footer class="footer">
+    长春聚投网络科技有限公司<br/>
+    Copyright©2020 版权所有 吉ICP备191341428号
+  </footer>
+</body>
+
+</html>

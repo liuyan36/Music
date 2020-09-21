@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 类似进行路由懒加载，更快速度加载出来
+        // import Login from '../components/Login.vue'
+        const Login = () => import(/*webpackChunkName: "Login_home_welcome"*/ '../components/Login.vue')
+        // import Home from '../components/Home.vue'
+        const Home = () => import(/*webpackChunkName: "Login_home_welcome"*/ '../components/Home.vue')
+
+        // // 解决路由重复报错问题，当路由重复使用报错，加入在router中
+        const originalPush = VueRouter.prototype.push
+        VueRouter.prototype.push = function push(location) {
+        return originalPush.call(this, location).catch(err => err)
+        }
+    
+    </script>
+</body>
+</html>

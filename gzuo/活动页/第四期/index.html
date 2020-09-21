@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .home {
+            width: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+            background-color: #FDAA00;
+        }
+        .home-img {
+            width: 100%;
+        }
+        .home-div {
+            text-align: center;
+        }
+        .home-div-img {
+            margin-top: -14%;
+        }
+        .home-text {
+            width: 90%;
+            margin: -11% 5% 0 5%;
+            height: 440px;
+            background-color: #FCFCFC;
+            border-radius: 30px;
+            text-align: center;
+            margin-bottom: 15%;
+        }
+        .home-text-img {
+            width: 64%;
+            margin: 0 auto;
+            margin-top: 13%;
+            height: 34px;
+        }
+        .home-box {
+            display: flex;
+            margin-top: 6%;
+        }
+        .home-text-box {
+            width: 22%;
+            height: 1%;
+            margin: 0 1.5% 0 1.5%;
+            background-color: #FFF7E1;
+        }
+        .home-box-div {
+            width: 80%;
+            margin: 10%;
+            border-radius: 30px;
+            line-height: 50px;
+            height: 50px;
+            background-color: #FF6151;
+            color: #FFFFFF;
+        }
+        .home-imgs {
+            width: 50%;
+            margin-top: -22px;
+        }
+        .home-test {
+            position: absolute;
+            margin: 0 20% 0 20%;
+            width: 60%;
+            background-color: red;
+            margin-top: -18%;
+            font-size: 18px;
+            border-radius: 30px;
+        }
+        .home-textb {
+            width: 90%;
+            margin: -10% 5% 0 5%;
+            background-color: #FCFCFC;
+            border-radius: 30px;
+            text-align: center;
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="home">
+        <img class="home-img" src="./img/background.png" alt="">
+        <div class="home-div">
+            <img class="home-div-img" src="./img/calendar.png" alt=""><br>
+            <div class="home-text">
+                <img class="home-text-img" src="./img/sign-in.png" alt="">
+                <div class="home-box">
+                    <div class="home-text-box">
+                        <p style="color:#BD972C;margin: 12%;">+10</p>
+                        <img style="width: 40%;margin-bottom: 12%;" src="./img/gold.png" alt="">
+                        <div style="font-size: 14px;  height: 22px; color: #FFFFFFFF; background-color: #FFD96C;">
+                            第1天
+                        </div>
+                    </div>
+                    <div class="home-text-box">
+                        <p style="color:#BD972C;margin: 12%;">+20</p>
+                        <img style="width: 40%;margin-bottom: 12%;" src="./img/gold.png" alt="">
+                        <div style="font-size: 14px;  height: 22px; color: #FFFFFFFF; background-color: #FFD96C;">
+                            第2天
+                        </div>
+                    </div>
+                    <div class="home-text-box">
+                        <p style="color:#BD972C;margin: 12%;">+30</p>
+                        <img style="width: 40%;margin-bottom: 12%;" src="./img/gold.png" alt="">
+                        <div style="font-size: 14px;  height: 22px; color: #FFFFFFFF; background-color: #FFD96C;">
+                            第3天
+                        </div>
+                    </div>
+                    <div class="home-text-box">
+                        <p style="color:#BD972C;margin: 12%;">+40</p>
+                        <img style="width: 40%;margin-bottom: 12%;" src="./img/gold.png" alt="">
+                        <div style="font-size: 14px;  height: 22px; color: #FFFFFFFF; background-color: #FFD96C;">
+                            第4天
+                        </div>
+                    </div>
+                </div>
+                <div class="home-box">
+                    <div class="home-text-box">
+                        <p style="color:#BD972C;margin: 12%;">+10</p>
+                        <img style="width: 40%;margin-bottom: 12%;" src="./img/gold.png" alt="">
+                        <div style="font-size: 14px;  height: 22px; color: #FFFFFFFF; background-color: #FFD96C;">
+                            第5天
+                        </div>
+                    </div>
+                    <div class="home-text-box">
+                        <p style="color:#BD972C;margin: 12%;">+20</p>
+                        <img style="width: 40%;margin-bottom: 12%;" src="./img/gold.png" alt="">
+                        <div style="font-size: 14px;  height: 22px; color: #FFFFFFFF; background-color: #FFD96C;">
+                            第6天
+                        </div>
+                    </div>
+                    <div style="width: 45%;margin-left: 1.2%;background-color: #FFF7E1;">
+                        <p style="color:#BD972C; margin: 6%;  margin-bottom: 1%;">+30</p>
+                            <img style="width: 40%;" src="./img/big-gold.png" alt="">
+                            <div style="font-size: 14px;height: 22px; color: #FFFFFFFF; background-color: #FFD96C;">
+                                第7天
+                            </div>
+                    </div>
+                </div>
+                <div class="home-box-div" onclick="signIn()">
+                    立即签到
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <img class="home-imgs" src="./img/sign-inlist.png" alt="">
+              </div>
+              <div style="margin-top: 7px">
+                 <div class="home-textb">
+                     <div style="display: flex;"><p style="margin-top: 13%;width: 20%;">排名</p><p style="margin-top: 13%;width: 70%;">用户名</p><p style="margin-top: 13%;width: 30%;">人数</p></div>
+                     <div style="display: flex;"><p style="margin: 0 0 10px 0;width: 20%;">1</p><p style="margin: 0 0 10px 0;width: 70%;">130****3536</p><p style="margin: 0 0 10px 0;width: 30%;">5050</p></div>
+                     <div style="display: flex;"><p style="margin: 0 0 10px 0;width: 20%;">2</p><p style="margin: 0 0 10px 0;width: 70%;">136****8952</p><p style="margin: 0 0 10px 0;width: 30%;">5000</p></div>
+                     <div style="display: flex;"><p style="margin: 0 0 10px 0;width: 20%;">3</p><p style="margin: 0 0 10px 0;width: 70%;">136****2589</p><p style="margin: 0 0 10px 0;width: 30%;">4800</p></div>
+                     <div style="display: flex;"><p style="margin: 0 0 10px 0;width: 20%;">4</p><p style="margin: 0 0 10px 0;width: 70%;">138****4058</p><p style="margin: 0 0 10px 0;width: 30%;">4650</p></div>
+                     <div style="display: flex;"><p style="margin: 0 0 10px 0;width: 20%;">5</p><p style="margin: 0 0 10px 0;width: 70%;">188****7969</p><p style="margin: 0 0 10px 0;width: 30%;">4620</p></div>
+                     <div style="display: flex;"><p style="margin: 0 0 10px 0;width: 20%;">6</p><p style="margin: 0 0 10px 0;width: 70%;">130****8950</p><p style="margin: 0 0 10px 0;width: 30%;">4500</p></div>
+                     <div style="display: flex;"><p style="margin: 0 0 10px 0;width: 20%;">7</p><p style="margin: 0 0 10px 0;width: 70%;">136****2289</p><p style="margin: 0 0 10px 0;width: 30%;">4000</p></div>
+                     <div style="display: flex;"><p style="margin: 0 0 10px 0;width: 20%;">8</p><p style="margin: 0 0 10px 0;width: 70%;">177****2456</p><p style="margin: 0 0 10px 0;width: 30%;">3500</p></div>
+                     <div style="display: flex;"><p style="margin: 0 0 10px 0;width: 20%;">9</p><p style="margin: 0 0 10px 0;width: 70%;">188****2889</p><p style="margin: 0 0 10px 0;width: 30%;">3250</p></div>
+                     <div style="display: flex;"><p style="margin: 0 0 10px 0;width: 20%;">10</p><p style="margin: 0 0 10px 0;width: 70%;">187****2400</p><p style="margin: 0 0 10px 0;width: 30%;">3000</p></div>
+                 </div>
+               </div>
+            <!-- <img src="./img/sign-in.png" alt=""> -->
+        </div>
+    </div>
+
+    <script>
+        function signIn() {
+            alert('第一天签到成功')
+        }
+    </script>
+</body>
+</html>

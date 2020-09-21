@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>英超赛事活动页</title>
+    <script src="inobounce.js"></script>
+    <script type="text/javascript">
+        function hello(){
+            alert("签到成功")
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            width: 100%;
+        }
+        .yc-home {
+            position: relative;
+            z-index: 1;
+        }
+
+        .yc {
+            width: 100%;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .yc-home-img {
+            width: 45px;
+            position: absolute;
+            z-index: 2;
+            margin-top: 88%;
+            margin-left: 85%;
+        }
+    </style>
+</head>
+<body>
+    <div class="yc-home">
+        <div id="name" onclick="hello()" class="yc-home-img">
+            <img src="./tm.png" alt="" >
+        </div>
+         <div class="yc">
+            <img src="./ychdy.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

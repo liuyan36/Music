@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .home {
+      height: 194vh;
+      width: 100%;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      background-color: #007f00;
+    }
+
+    .home-img {
+      width: 100%;
+    }
+
+    .login_box {
+      width: 90%;
+      height: 250px;
+      background-color: #fff;
+      border-radius: 14px;
+      position: absolute;
+      left: 50%;
+      top: 61%;
+      transform: translate(-50%, -50%);
+    }
+
+    .avatar_box {
+      height: 48px;
+      width: 144px;
+
+      background-color: #fbac22;
+      border-radius: 54px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .avatar_box img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      padding: 5px;
+      background-color: #eee;
+    }
+
+
+    .login_boxs {
+      width: 90%;
+      height: 95vh;
+      background-color: #F1F8F1;
+      border-radius: 14px;
+      position: absolute;
+      left: 50%;
+      top: 140%;
+      transform: translate(-50%, -50%);
+    }
+
+    .avatar_boxs {
+      height: 48px;
+      width: 144px;
+
+      background-color: #fbac22;
+      border-radius: 54px;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .avatar_text {
+      width: 80%;
+      margin: 10% 10% 0 10%;
+      height: 300px;
+    }
+
+    .avatar_border {
+      width: 80%;
+      height: 100px;
+      margin: 10%;
+    }
+
+    .avatar_border_p {
+      text-align: center;
+      margin-top: 7%;
+      font-size: 19px;
+    }
+
+    .avatar_border_text {
+      margin-top: 26%;
+      font-size: 15px;
+    }
+
+    select {
+      width: 107px;
+      height: 35px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="home">
+    <img class="home-img" src="./img/background.png" alt />
+    <div class="login_box">
+      <div class="avatar_box">
+        <p style="text-align: center;color: rgb(255, 255, 255)">报名入口</p>
+
+      </div>
+      <div style="width: 80%;margin: 10% 10% 0 10%;">
+        <select class="sheng" onchange="changeCity()">
+          <option>请选择</option>
+        </select>
+        <span>省</span>
+        <select class="shi">
+        </select>
+        <span>市</span>
+      </div>
+      <div style="margin-left: 8%;">
+        电话号：<input style="margin-top: 9%;" id="mobile" type="text" onkeyup="value=value.replace(/[^\d]/g,'')"
+          maxlength=11></input>
+      </div>
+     <div style="text-align: center; margin-top: 10%;">
+      <button style=" width: 40%; height: 43px; background-color: red; color: #fff;" onclick="inviteClick()">报名成功</button>
+     </div>
+    </div>
+    <div class="login_boxs">
+      <div class="avatar_boxs">
+        <p style="text-align: center; color: rgb(255, 255, 255)">竞赛规则</p>
+      </div>
+      <div class="avatar_text">
+        <p style="font-size: 16px;color: #333333;line-height: 27px;">
+          比赛采取十人制比赛的赛制，分成中部赛区、南部赛区、北部赛区，东部赛区，西部赛区，实行赛会制度。每个赛区10支球队，分成2组进行比赛
+          小组前两名出现进入全国赛。
+        </p>
+        <p style="font-size: 16px; color: #333333;line-height: 27px;">
+          竞赛办法：
+        </p>
+        <p style="font-size: 14px; color: #333333;line-height: 27px;">
+          采用国际足联最新比赛规则的各小组赛以及淘汰赛的比赛时间全部安排上下半场各40分钟，中场休息10分钟。
+        </p>
+      </div>
+      <div class="avatar_boxs">
+        <p style="text-align: center; color: rgb(255, 255, 255)">竞赛安排</p>
+      </div>
+      <div class="avatar_border">
+        <div class="avatar_border_p">
+          <p>报名时间：10月1日-11月30日</p>
+          <p>比赛时间：12月1日-04月30日</p>
+        </div>
+      </div>
+      <div class="avatar_boxs">
+        <p style="text-align: center; color: rgb(255, 255, 255)">报名要求</p>
+      </div>
+      <div class="avatar_border">
+        <div class="avatar_border_text">
+          <p>球员必须是年满18岁，且为该城市的常住人口，每个城市可报名一只支队伍，代表该城市出战。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+  <script src="./inviteClick.js"></script>
+  <script>
+    function changeCity() {
+      console.log(12324)
+    }
+  </script>
+</body>
+
+</html>

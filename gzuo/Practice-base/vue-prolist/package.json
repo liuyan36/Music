@@ -1,0 +1,9 @@
+{
+  "name": "vue-prolist",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-service": "^3.2.0"
+  }
+}

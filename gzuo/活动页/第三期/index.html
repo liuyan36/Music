@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invite</title>
+</head>
+<body>
+  <script>
+    function imgClick() {
+      alert('邀请成功')
+    }
+  </script>
+    <div class="home">
+        <div class="home_box">
+            <img class="home-img" src="./assets/background.png" alt="">
+            <img class="home-imgs" src="./assets/titleBackground.png" alt="">
+            <div class="home-test">领取步骤</div>
+        </div>
+        <div style="margin-top: 7px">
+          <div class="home-text">
+              <div><img class="home-text-img" src="./assets/share.png" alt=""><br>
+               <span class="home-text-p">分享活动<br>给好友</span></div>
+              <div><img class="home-text-imga" src="./assets/arrows.png" alt=""></div>
+              <div><img class="home-text-img" src="./assets/invite.png" alt=""><br>
+              <span class="home-text-p">好友接受<br>邀请</span></div>
+              <div><img class="home-text-imga" src="./assets/arrows.png" alt=""></div>
+              <div><img class="home-text-img" src="./assets/download.png" alt=""><br>
+              <span class="home-text-p">好友下载<br>注册APP</span></div>
+          </div>
+         <div style="text-align: center;">
+           <img class="home-imgs" src="./assets/titleBackground.png" alt="">
+           <div class="home-test">我的邀请</div>
+         </div>
+         <div style="margin-top: 7px">
+            <div class="home-texts">
+                <div class="home-text-boxs">
+                  <div class="home-boxs">
+                      <p>0元<br><span style="color: #343434; font-weight: Bold;">总收益</span></p>
+                  </div>
+                  <div class="box-border"></div>
+                  <div class="home-boxs">
+                      <p>0元<br><span style="color: #343434; font-weight: Bold;">成功邀请</span></p>
+                  </div>
+                  <div class="box-border"></div>
+                  <div class="home-boxs">
+                      <p>0元<br><span style="color: #343434; font-weight: Bold;">未成功</span></p>
+                  </div>
+                </div>
+                <img class="home-boxs-img" src="./assets/inviteClick.png" alt="" onclick="imgClick()">
+            </div>
+         </div>
+          <div style="text-align: center;">
+           <img class="home-imgs" src="./assets/titleBackground.png" alt="">
+           <div class="home-test">邀请榜</div>
+         </div>
+         <div style="margin-top: 7px">
+            <div class="home-textb">
+                <div style="display: flex;"><p style="margin-top: 10%;width: 20%;">排名</p><p style="margin-top: 10%;width: 80%;">用户名</p><p style="margin-top: 10%;width: 20%;">人数</p></div>
+                <div style="display: flex;"><p style="width: 20%;">1</p><p style="width: 80%;">130****3536</p><p style="width: 20%;">20</p></div>
+                <div style="display: flex;"><p style="width: 20%;">2</p><p style="width: 80%;">136****8952</p><p style="width: 20%;">18</p></div>
+                <div style="display: flex;"><p style="width: 20%;">3</p><p style="width: 80%;">136****2589</p><p style="width: 20%;">16</p></div>
+                <div style="display: flex;"><p style="width: 20%;">4</p><p style="width: 80%;">138****4058</p><p style="width: 20%;">15</p></div>
+                <div style="display: flex;"><p style="width: 20%;">5</p><p style="width: 80%;">188****7969</p><p style="width: 20%;">14</p></div>
+                <div style="display: flex;"><p style="width: 20%;">6</p><p style="width: 80%;">130****8950</p><p style="width: 20%;">12</p></div>
+                <div style="display: flex;"><p style="width: 20%;">7</p><p style="width: 80%;">136****2289</p><p style="width: 20%;">11</p></div>
+                <div style="display: flex;"><p style="width: 20%;">8</p><p style="width: 80%;">177****2456</p><p style="width: 20%;">10</p></div>
+                <div style="display: flex;"><p style="width: 20%;">9</p><p style="width: 80%;">188****2889</p><p style="width: 20%;">8</p></div>
+                <div style="display: flex;"><p style="width: 20%;">10</p><p style="width: 80%;">187****2400</p><p style="width: 20%;">6</p></div>
+            </div>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    padding:  0;
+  }
+  .home {
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: #FE7620;
+}
+.home_box {
+  text-align: center;
+  position:relative;
+}
+.home-img {
+  width: 100%;
+}
+.home-imgs {
+    width: 50%;
+    margin-top: -22px;
+}
+.home-test {
+  position: absolute;
+  margin-top: -9%;
+  margin-right: 40%;
+  margin-left: 40%;
+  color: #FCFCFC;
+  font-size: 18px;
+}
+.home-text {
+    width: 90%;
+    margin: -10% 5% 0 5%;
+    height: 200px;
+    background-color: #FCFCFC;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    margin-bottom: 15%;
+}
+.home-text-p {
+  color: #FF8215;
+}
+
+.home-text-img {
+    width: 60%;
+    margin-top: 70%;
+}
+.home-text-imga {
+  margin-top: 150%;
+  width: 60%;
+}
+.home-texts {
+    width: 90%;
+    margin: -10% 5% 0 5%;
+    height: 200px;
+    background-color: #FCFCFC;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 15%;
+}
+.home-text-boxs {
+    margin: 0px 10% 0 10%;
+    display: flex;
+    width: 80%;
+    
+    height: 100px;
+}
+.home-boxs {
+    width: 33%;
+    height: 100px;
+}
+.box-border {
+    width: 1px;
+    border-right: 1px dashed #cccccc;
+    height: 50px;
+    
+}
+.home-boxs p {
+  margin: 0 auto;
+  margin-top: 36%;
+  font-weight: Bold;
+  color: red;
+}
+.home-boxs-img {
+  width: 66%;
+}
+
+.home-textb {
+    width: 90%;
+    margin: -10% 5% 0 5%;
+    height: 600px;
+    background-color: #FCFCFC;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.el-message-box__wrapper .el-message-box {
+  width: 80%;
+  margin: 73% 10% 0 10%;
+}
+</style>

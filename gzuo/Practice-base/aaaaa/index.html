@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .yc-home-a {
+            position: absolute;
+            z-index: 1;
+        }
+        .yc-home-b {
+            position: absolute;
+            z-index: 2;
+            margin-top: 30px;
+        }
+        .yc-home-c {
+            position: absolute;
+            z-index: 2;
+            margin-top: 30px;
+            margin-left: 79%;
+        }
+        .yc-home-d {
+            position: absolute;
+            z-index: 2;
+            margin-top: 87%;
+            margin-left: 88%;
+        }
+
+        .yc-home {
+            justify-content: space-evenly;
+            width: 100%;
+            height: 580px;
+            display: flex;
+            background-color: rgb(36,110,197);
+        }
+
+        .yc-home-list {
+            height: 59px;
+            margin-top: 400px;
+            display:block;
+        }
+        .yc-home-list-a {
+            width: 77px;
+            text-align: center;
+            height: 59px;
+            background-color: rgb(13,62,164);
+            margin-top: 6px;
+            display:block;
+            border: 5px solid rgb(71,158,253);
+        }
+
+        .yc-home-span {
+            color: rgb(84,207,234);
+            line-height: 28px;
+            font-weight: 300;
+        }
+
+        .yc-centent {
+            background: rgb(36,110,197);
+            height: 500px;
+        }
+        .yc-centent-a {
+            margin-top: -14px;
+        }
+        .yc-centent-box {
+            width: 90%;
+            margin: 0 5% 0 5%;
+            background: #FFFFFF;
+            height: 350px;
+        }
+
+        .yc-centent-d {
+            display: flex;
+        }
+        .yc-centent-b {
+            width: 70px;
+            margin-left: 14%;
+            margin-right: -10%;
+            margin-top: 6%;
+            text-align: center;
+        }
+
+        .yc-centent-b-a  {
+            width: 100px;
+            margin-left: -39%;
+            height: 77px;
+            margin-top: 40%;
+            background-color: red;
+            border-radius: 5px;
+        }
+
+        .yc-centent-b-b  {
+            width: 80px;
+            margin-left: -5px;
+            height: 77px;
+            border: 1px solid rgb(74,147,238);
+            margin-top: 78%;
+        }
+
+        .yc-centent-b-c  {
+            width: 100px;
+            height: 77px;
+            border: 1px solid rgb(74,147,238);
+            margin-top: 40%;
+        }
+
+        .yc-centent-e {
+            width: 90%;
+            margin-left: 7%;
+            font-size: 11px;
+            margin-top: 24px;
+            color: #cccccc;
+        }
+
+        .yc-centent-box-a {
+            height: 85px;
+            width: 90%;
+            margin: 0 5% 0 5%;
+            border: 1px solid;
+        }
+
+        .yc-centent-box-b {
+            display: flex;
+            margin-left: 5%;
+            margin-top: 10%
+        }
+
+    </style>
+</head>
+<body>
+    <div class="yc-home-f">
+       <div class="yc-home-a">
+            <img src="./image/背景.png" alt="">
+       </div>
+       <div class="yc-home-b">
+           <img src="./image/赢更多.png" alt="">
+       </div>
+       <div class="yc-home-c">
+           <img src="./image/活动规则.png" alt="">
+       </div>
+       <div class="yc-home-d">
+           <a href="#"><img src="./image/签到.png" alt=""></a>
+       </div>
+    </div>
+    <div class="yc-home">
+        <div class="yc-home-list">
+            <img src="./image/我的竞彩币.png" alt="">
+            <div class="yc-home-list-a">
+                <span class="yc-home-span">
+                    200<br>
+                    查看明细
+                </span>
+            </div>
+        </div>
+        <div class="yc-home-list">
+            <img src="./image/我的竞彩币.png" alt="">
+            <div class="yc-home-list-a">
+            <span class="yc-home-span">
+                0<br>
+                查看明细</span></div>
+        </div>
+        <div class="yc-home-list">
+            <img src="./image/我的竞彩币.png" alt="">
+            <div class="yc-home-list-a">
+            <span style="color: yellow;line-height: 28px; font-weight: 300;">
+                +1000<br>
+                <span style="color: rgb(84,207,234);">竞猜币</span>
+            </span>
+        </div>
+        </div>
+    </div>
+    <div class="yc-centent">
+        <div class="yc-centent-box">
+            <div class="yc-centent-a">
+                <img src="./image/今晚竞猜.png" alt="">
+            </div>
+            <div class="yc-centent-d">
+                <div class="yc-centent-b">
+                    <img src="./image/球队1.png" alt="">
+                    曼联
+                    <div class="yc-centent-b-a">
+                        <span style="font-size: 29px;color: #FFFFFF;line-height: 2;">胜<br></span>
+                        <span style="color: #FFFFFF;">回报1.28倍</span>
+                    </div>
+                </div>
+                <div class="yc-centent-b">
+                    <img style="width: 56px; margin-top: 26px;" src="./image/VS.png" alt="">
+                    <div class="yc-centent-b-b">
+                        <span style="font-size: 29px; color: rgb(74,147,238);line-height: 2;">平局<br></span>
+                        <span style="color: #FFFFFF;color: rgb(74,147,238);">回报4.15倍</span>
+                    </div>
+                </div>
+                <div class="yc-centent-b">
+                    <img src="./image/球队2.png" alt="">
+                    埃弗顿
+                    <div class="yc-centent-b-c">
+                        <span style="font-size: 29px; color: rgb(74,147,238); line-height: 2;">胜<br></span>
+                        <span style="color: #FFFFFF;color: rgb(74,147,238);">回报9.3倍</span>
+                    </div>
+                </div>
+            </div>
+            <div class="yc-centent-e">
+                <p>竞猜只针对比赛常规时间结束，加时赛和点球结果不算</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

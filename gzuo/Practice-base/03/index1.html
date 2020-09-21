@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" onkeydown="inputChange(this)">
+  <span></span>
+  <script>
+    // js模拟vue的双向绑定
+    /* 
+    1、处理数据有getter和setter
+    2、数据改变 触发set
+    3、set通知watcher监听
+    4、watcher监听更新页面
+    */
+
+    let data={
+      inputValue:''
+    }
+    let middle=''
+    Object.defineProperty(data,'inputValue',{
+      get(){
+        return middle
+      },
+      set(params){
+        middle = params
+        watcher()
+      }
+    })
+    function inputChange(e){
+      console.log(111)
+      // 将input值赋给inputValue
+      data.inputValue=e.value
+    }
+    function watcher(){
+      // 根据修改后的值控制页面刷新
+      let value=data.inputValue;
+      var span=document.querySelector('span');
+      span.innerHTML=value
+    }
+  </script>
+</body>
+</html>

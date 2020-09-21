@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>足球部落</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    color: #262626;
+    line-height: 1;
+    font-size: 14px;
+  }
+  img {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .f-left {
+    float: left;
+  }
+  .f-right {
+    float: right;
+  }
+  .clearfix::after {
+   content: '';
+   display: table;
+   clear: both;
+  }
+  .text-center {
+    text-align: center;
+  }
+  /* title */
+  h2 {
+    font-size: 24px;
+    margin: 60px 0 20px 0;
+    font-weight: normal;
+  }
+  @media screen and (min-width:1400px){
+    .container-content { width: 1200px; margin: 0 auto; margin-top: 260px;}
+  }
+
+  @media screen and (min-width: 960px) and (max-width: 1399px) {
+    .container-content { width: 1200px; margin: 0 auto; }
+  }
+
+  .home-title {
+    margin-bottom: 45px;
+  }
+  .color-999 {
+    color: #999999;
+  }
+  .color-333 {
+    color: #333;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  header {
+    height: 81px;
+  }
+  nav {
+    margin-top: 30px;
+  }
+  .nav-item {
+    margin-left: 80px;
+    color: #262626;
+
+  }
+  .nav-item.active {
+    color: #2d9fe0;
+  }
+  .banner {
+    height: 450px;
+    background-size: auto 100%;
+    background-position: center center;
+  }
+  .home-banner {
+    /* background-image: url(https://51nbimg.u51.com/4fe638c5255848f4b773f00899720a6c.jpg); */
+    height: 682px;
+  }
+  .list-item {
+    text-align: justify;
+    font-size: 14px;
+    padding: 14px 0 14px 0;
+    list-style: none;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  /* .content {
+    padding-bottom: 100px;
+  } */
+  .alipay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .alipay-mask {
+    background: #fff;
+    opacity: 0.65;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .alipay img {
+    position: absolute;
+    width: 330px;
+    top: 50%;
+    left: 50%;
+    margin-left: -165px;
+    margin-top: -301px;
+  }
+  .item-img {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+    height: 120px;
+    line-height: 40px;
+    background: #272724;
+    color: #fff;
+  }
+  .f-box{
+    margin:0 auto;
+    width: 504px;
+  }
+  .add-box{
+    margin:0 auto;
+    width: 450px;
+    margin-bottom: 50px;
+  }
+  .add-box a{
+    text-decoration:underline;
+  }
+
+  a>span { color: #ccc; font-weight: 700; }
+  a:hover>span {color:#fff; font-weight: 700;}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container clearfix">
+      <img src="./image/login.png" class="logo f-left" alt="">
+      <nav class="f-right">
+        <a class="active nav-item f-right" href="./about.html">关于我们</a>
+        <a class="nav-item f-right" href="./index.html">首页</a>
+      </nav>
+    </div>
+  </header>
+  <section class="banner about-banner">
+    <div>
+      <img src="./image/关于我们.jpg" alt="" style="width: 100%;">
+    </div>
+  </section>
+  <section class="container-content" >
+    <h2 class="text-center">产品简介</h2>
+    <p class="color-333 text-center">足球部落是一个让你碰到更多与你兴趣相投的足球迷的基地</p>
+    <h2 class="text-center">产品特色</h2>
+    <div class="f-box">
+      <p class="color-333"><span class="bold">响应快速：</span>给你极致的享受和交友的乐趣</p>
+      <br>
+      <p class="color-333"><span class="bold">方便快捷：</span>优先知道喜欢的球队赛程，让您也一起快速起来</p>
+      <br>
+      <p class="color-333"><span class="bold">奖牌名利：</span>花费您的休闲时间，碰到属于你的球队，碰到兴趣相投的伙伴</p>
+      <br>
+      <p class="color-333"><span class="bold">信息安全：</span>身份实名后即可参与球法竞猜、球赛回顾等，数据安有保障，信息可靠</p>
+      <br>
+      <p class="color-333"><span class="bold">社区交友：</span>邀请您身边的朋友，一起参与多样玩法，观看球迷评论，即可完成交友</p>
+    </div>
+    <h2 class="text-center">联系方式</h2>
+    <div class="add-box">
+      <p class="color-333">欢迎致电：13394423999</p>
+      <br>
+      <p class="color-333">联系地址：山东省枣庄市市中区振兴路吉品街21号楼东1单元1-2层</p>
+      <!-- <p class="color-333">联系地址：<a target="_blank" href="https://j.map.baidu.com/60/P_i">北京市昌平区东小口镇中东路5号院3号</a></p> -->
+    </div>
+  </section>
+  <footer class="footer">
+    山东梯子网络科技有限公司<br/>
+    Copyright©2020 版权所有 鲁ICP备196581428号
+    <br>
+    <a href="./footballTribeUserPrivacy/footballTribe.html">
+        <span>隐私协议</span>
+    </a>&nbsp;&nbsp;
+    <a href="./footballTribeYserContact/footballTribe.html">
+      <span>用户协议</span>
+    </a>
+  </footer>
+</body>
+
+</html>

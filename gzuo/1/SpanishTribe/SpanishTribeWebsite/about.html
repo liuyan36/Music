@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>西甲部落</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    color: #262626;
+    line-height: 1;
+    font-size: 14px;
+  }
+  img {
+    display: block;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .f-left {
+    float: left;
+  }
+  .f-right {
+    float: right;
+  }
+  .clearfix::after {
+   content: '';
+   display: table;
+   clear: both;
+  }
+  .text-center {
+    text-align: center;
+  }
+  /* title */
+  h2 {
+    font-size: 24px;
+    margin: 60px 0 20px 0;
+    font-weight: normal;
+  }
+  @media screen and (min-width:1400px){
+    .container-content { width: 1200px; margin: 0 auto; margin-top: 260px;}
+  }
+
+  @media screen and (min-width: 960px) and (max-width: 1399px) {
+    .container-content { width: 1200px; margin: 0 auto; }
+  }
+
+  .home-title {
+    margin-bottom: 45px;
+  }
+  .color-999 {
+    color: #999999;
+  }
+  .color-333 {
+    color: #333;
+  }
+  .bold {
+    font-weight: bold;
+  }
+  header {
+    height: 81px;
+  }
+  nav {
+    margin-top: 30px;
+  }
+  .nav-item {
+    margin-left: 80px;
+    color: #262626;
+
+  }
+  .nav-item.active {
+    color: #2d9fe0;
+  }
+  .banner {
+    height: 450px;
+    background-size: auto 100%;
+    background-position: center center;
+  }
+  .home-banner {
+    /* background-image: url(https://51nbimg.u51.com/4fe638c5255848f4b773f00899720a6c.jpg); */
+    height: 682px;
+  }
+  .list-item {
+    text-align: justify;
+    font-size: 14px;
+    padding: 14px 0 14px 0;
+    list-style: none;
+    border-bottom: 1px solid #e6e6e6;
+  }
+  /* .content {
+    padding-bottom: 100px;
+  } */
+  .alipay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  .alipay-mask {
+    background: #fff;
+    opacity: 0.65;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  .alipay img {
+    position: absolute;
+    width: 330px;
+    top: 50%;
+    left: 50%;
+    margin-left: -165px;
+    margin-top: -301px;
+  }
+  .item-img {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+    height: 120px;
+    line-height: 40px;
+    background: #272724;
+    color: #fff;
+  }
+  .f-box{
+    margin:0 auto;
+    width: 520px;
+  }
+  .add-box{
+    margin:0 auto;
+    width: 450px;
+    margin-bottom: 50px;
+  }
+  .add-box a{
+    text-decoration:underline;
+  }
+
+  a>span { color: #ccc; font-weight: 700; }
+  a:hover>span {color:#fff; font-weight: 700;}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container clearfix">
+      <img src="./image/login.png" class="logo f-left" alt="">
+      <nav class="f-right">
+        <a class="active nav-item f-right" href="./about.html">关于我们</a>
+        <a class="nav-item f-right" href="./index.html">首页</a>
+      </nav>
+    </div>
+  </header>
+  <section class="banner about-banner">
+    <div>
+      <img src="./image/关于我们.jpg" alt="" style="width: 100%;">
+    </div>
+  </section>
+  <section class="container-content" >
+    <h2 class="text-center">产品简介</h2>
+    <p class="color-333 text-center">西甲部落是一个让你碰到更多与你兴趣相投的西甲球迷的基地</p>
+    <h2 class="text-center">产品特色</h2>
+    <div class="f-box">
+      <p class="color-333"><span class="bold">赛事赛程：</span>这里有丰富多彩的西甲赛事和未来的安排赛程</p>
+      <br>
+      <p class="color-333"><span class="bold">获取积分：</span>看赛程视频、刷精彩资讯，即可获得积分</p>
+      <br>
+      <p class="color-333"><span class="bold">第一资讯：</span>第一时间获得你喜欢的资讯和喜欢赛程比赛</p>
+      <br>
+      <p class="color-333"><span class="bold">精彩视频：</span>各种各样的赛程视频，让你眼花缭乱的赛事，想停都停不下来</p>
+      <br>
+      <p class="color-333"><span class="bold">收藏点赞：</span>收藏你喜欢的资讯和视频，一起推广到身边也喜欢西甲的赛事的小伙伴吧</p>
+    </div>
+    <h2 class="text-center">联系方式</h2>
+    <div class="add-box">
+      <p class="color-333">欢迎致电：15837228072</p>
+      <br>
+      <p class="color-333">联系地址：河南省安阳市安阳高新区文昌大道西段路南 </p>
+      <!-- <p class="color-333">联系地址：<a target="_blank" href="https://j.map.baidu.com/60/P_i">北京市昌平区东小口镇中东路5号院3号</a></p> -->
+    </div>
+  </section>
+  <footer class="footer">
+    安阳中安亿通网络科技有限公司 <br/>
+    Copyright©2020 版权所有 豫ICP备196951428号
+    <br>
+    <a href="./SpanishTribeUserPrivacy/SpanishTribe.html">
+      <span>隐私协议</span>
+  </a>&nbsp;&nbsp;
+  <a href="./SpanishTribeYserContact/SpanishTribe.html">
+    <span>用户协议</span>
+  </a>
+  </footer>
+</body>
+
+</html>

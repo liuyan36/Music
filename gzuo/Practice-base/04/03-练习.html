@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 全局中this就是windows
+        // 有权访问另一个作用域中变量的函数就是闭包
+        function add() {
+            console.log(this)
+            console.log(this.document.compatMode)
+        }
+
+        add()
+    </script>
+</body>
+</html>

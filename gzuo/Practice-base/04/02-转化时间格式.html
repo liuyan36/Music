@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 从main.js中直接引入定义，全局定义格式化时间过滤器,叫做dateFormat
+        // 引用的时候直接| dateFormat 就可以转化数字为时间轴
+        Vue.filter('dateFormat', function(originVal){
+        const dt = new Date(originVal)
+
+        // y 年 m 月 d 日 hh小时 mm分钟 ss 秒
+        const y = dt.getFullYear()
+        const m = (dt.getMonth() + 1 + '').padStart(2, '0')
+        const d = (dt.getDate() + '').padStart(2, '0')
+
+        const hh = (dt.getHours() + '').padStart(2, '0')
+        const mm = (dt.getMinutes() + '').padStart(2, '0')
+        const ss = (dt.getSeconds() + '').padStart(2, '0')
+
+        return `${y}-${m}-${d} ${hh}:${mm}:${ss}`
+        })
+    </script>
+</body>
+</html>
